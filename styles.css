@@ -18,16 +18,14 @@ body {
 }
 
 .container {
-    height: 50%;
-    width: 80%;
+    height: 370px;
+    width: 90%;
     background-color:  hsl(213, 19%, 18%);
     border-radius: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-  
- 
 }
 
 .star, .num {
@@ -81,4 +79,56 @@ body {
 .selected {
     background-color: hsl(25, 97%, 53%);
     color: black
+}
+
+.thanks {
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.result {
+    height: 2.5em;
+    width: 50%;
+    background-color: rgba(149, 158, 172,0.2);
+    border-radius: 50px;
+    color: hsl(25, 97%, 53%);
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text:last-child {
+    text-align: center;
+}
+
+
+.num:hover {
+    background-color: hsl(25, 97%, 53%); 
+    color: black;
+}
+
+.submit:active {
+    transform: translateY(4px)
+}
+
+.submit:hover {
+    border: 1px solid black
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        max-width: 324px;
+        max-height: 370px;
+        justify-content: space-around;
+    }
 }
